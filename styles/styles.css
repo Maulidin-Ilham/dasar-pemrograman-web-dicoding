@@ -7,3 +7,51 @@
   padding: 0;
 }
 /* end css reset */
+
+img.hero {
+  width: 100%;
+  height: auto;
+}
+
+/* mobile styling */
+@media screen and (max-width: 767px) {
+  body {
+    /* background-color: red; */
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  header .hero-container {
+    /* background-color: yellow; */
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-img-container {
+  }
+
+  .hero-content {
+    margin-top: 16px;
+  }
+
+  img.hero {
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+  }
+
+  .hero-content article {
+    margin-top: 4px;
+  }
+}
+/* end mobile styling */
