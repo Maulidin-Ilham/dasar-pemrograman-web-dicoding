@@ -23,7 +23,10 @@ img.hero {
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   nav ul {
@@ -32,26 +35,38 @@ img.hero {
 
   header .hero-container {
     /* background-color: yellow; */
-    padding-left: 10px;
-    padding-right: 10px;
+
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   .hero-img-container {
+    position: relative;
   }
 
   .hero-content {
     margin-top: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
   }
 
   img.hero {
     width: 100%;
     height: auto;
-    border-radius: 2%;
   }
 
   .hero-content article {
     margin-top: 4px;
+    font-weight: 500;
+  }
+
+  .hero-content h1 {
+    font-weight: bold;
   }
 }
 /* end mobile styling */
