@@ -13,6 +13,16 @@ img.hero {
   height: auto;
 }
 
+nav ul li {
+  cursor: pointer;
+  padding: 5px;
+  border-bottom: 3px solid transparent;
+}
+
+nav ul li:hover {
+  border-bottom: 3px solid black;
+}
+
 /* mobile styling */
 @media screen and (max-width: 767px) {
   body {
@@ -62,11 +72,16 @@ img.hero {
 
   .hero-content article {
     margin-top: 4px;
-    font-weight: 500;
   }
 
-  .hero-content h1 {
+  .hero-content article p {
+    font-weight: 200;
+    font-size: 14px;
+  }
+
+  .hero-content h2 {
     font-weight: bold;
+    font-size: 24px;
   }
 }
 /* end mobile styling */
@@ -93,10 +108,6 @@ img.hero {
     margin-left: 20px;
     cursor: pointer;
     padding: 5px;
-  }
-
-  nav ul li:hover {
-    background-color: red;
   }
 
   nav ul {
@@ -137,7 +148,8 @@ img.hero {
     font-weight: 500;
   }
 
-  .hero-content h1 {
+  .hero-content h2 {
+    font-size: 32px;
     font-weight: bold;
   }
 }
@@ -165,10 +177,12 @@ img.hero {
     margin-left: 20px;
     cursor: pointer;
     padding: 5px;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
   }
 
   nav ul li:hover {
-    background-color: red;
+    border-bottom: 3px solid black;
   }
 
   nav ul {
