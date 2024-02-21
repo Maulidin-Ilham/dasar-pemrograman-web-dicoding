@@ -68,13 +68,15 @@ footer article {
 }
 
 .explore-content button:hover,
-.trip-content button:hover {
+.trip-content button:hover,
+.form-subscribe button:hover {
   background-color: white;
   color: #b12029;
 }
 
 .explore-content button,
-.trip-content button {
+.trip-content button,
+.form-subscribe button {
   transition: background-color 0.3s, color 0.3s; /* Add transition for background-color and color with a duration of 0.3s */
 }
 
@@ -82,6 +84,55 @@ footer .social i:hover {
   cursor: pointer;
   color: #b12029;
   transition: background-color 0.3s, color 0.3s;
+}
+
+section.form-subscribe {
+  padding-left: 14px;
+  padding-right: 14px;
+
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 26px;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-subscribe .content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+
+  text-align: center;
+}
+
+.form-subscribe button {
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #b12029;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #b12029;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding: 12px;
+}
+
+.card-container {
+  height: 100vh;
 }
 
 /* mobile styling */
@@ -198,6 +249,7 @@ footer .social i:hover {
     flex-direction: column;
     margin-top: 40px;
     margin-bottom: 20px;
+    height: 100vh;
   }
 
   .explore-content .content {
@@ -244,6 +296,7 @@ footer .social i:hover {
     flex-direction: column;
     margin-top: 40px;
     margin-bottom: 20px;
+    height: 100vh;
   }
 
   .trip-content .content {
@@ -434,6 +487,7 @@ footer .social i:hover {
     flex-direction: row;
     margin-top: 40px;
     margin-bottom: 20px;
+    height: 100vh;
   }
 
   .explore-content aside {
@@ -485,6 +539,7 @@ footer .social i:hover {
     flex-direction: row;
     margin-top: 40px;
     margin-bottom: 20px;
+    height: 100vh;
   }
 
   .trip-content aside {
@@ -610,10 +665,11 @@ footer .social i:hover {
     height: 100vh;
   }
 
-  main .explore-content {
+  /* main .explore-content {
     width: 100%;
     height: 100%;
-  }
+    height: 100vh;
+  } */
 
   .card-container {
     padding-left: 30px;
@@ -675,10 +731,12 @@ footer .social i:hover {
     flex-direction: row;
     margin-top: 40px;
     margin-bottom: 20px;
+    height: 100vh;
   }
 
   .explore-content aside {
     order: 2;
+    flex: 1;
   }
 
   .explore-content .content {
@@ -686,6 +744,7 @@ footer .social i:hover {
     padding-right: 25px;
     margin-top: 10px;
     order: 1;
+    flex: 1;
   }
 
   .explore-content .content p {
@@ -731,10 +790,12 @@ footer .social i:hover {
     flex-direction: row;
     margin-top: 40px;
     margin-bottom: 20px;
+    height: 100vh;
   }
 
   .trip-content aside {
     order: 1;
+    flex: 1;
   }
 
   .trip-content .content {
@@ -742,6 +803,7 @@ footer .social i:hover {
     padding-right: 25px;
     margin-top: 10px;
     order: 2;
+    flex: 1;
   }
 
   .trip-content .content p {
