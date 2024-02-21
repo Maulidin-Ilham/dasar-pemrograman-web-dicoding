@@ -16,11 +16,11 @@ img.hero {
 nav ul li {
   cursor: pointer;
   padding: 5px;
-  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s;
 }
 
 nav ul li:hover {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #b12029;
 }
 
 main {
@@ -67,11 +67,22 @@ footer article {
   font-weight: 500;
 }
 
-/* main .explore-content {
-  background-color: gainsboro;
-  width: 100%;
-  height: 100%;
-} */
+.explore-content button:hover,
+.trip-content button:hover {
+  background-color: white;
+  color: #b12029;
+}
+
+.explore-content button,
+.trip-content button {
+  transition: background-color 0.3s, color 0.3s; /* Add transition for background-color and color with a duration of 0.3s */
+}
+
+footer .social i:hover {
+  cursor: pointer;
+  color: #b12029;
+  transition: background-color 0.3s, color 0.3s;
+}
 
 /* mobile styling */
 @media screen and (max-width: 767px) {
@@ -100,6 +111,7 @@ footer article {
     flex-direction: column;
     position: relative;
   }
+
   .hero-img-container {
     position: relative;
   }
@@ -307,9 +319,12 @@ footer article {
   }
 
   nav ul li {
-    margin-left: 20px;
+    font-size: 15px;
+    margin-left: 16px;
     cursor: pointer;
-    padding: 5px;
+    padding: 4px;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
   }
 
   nav ul {
@@ -317,7 +332,6 @@ footer article {
     display: flex;
     flex-direction: row;
   }
-
   header .hero-container {
     /* background-color: yellow; */
 
@@ -529,10 +543,6 @@ footer article {
     border-bottom: 3px solid transparent;
   }
 
-  nav ul li:hover {
-    border-bottom: 3px solid black;
-  }
-
   nav ul {
     list-style-type: none;
     display: flex;
@@ -651,8 +661,8 @@ footer article {
   }
 
   .explore-content .content {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin-top: 10px;
     order: 1;
   }
@@ -685,7 +695,12 @@ footer article {
     border-radius: 3px;
     font-size: 16px;
     margin-top: 10px;
-    font-weight: 600;
+    font-weight: 500;
+  }
+
+  .explore-content button:hover {
+    background-color: white;
+    color: #b12029;
   }
 
   main .trip-content {
@@ -702,8 +717,8 @@ footer article {
   }
 
   .trip-content .content {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin-top: 10px;
     order: 2;
   }
@@ -736,7 +751,12 @@ footer article {
     border-radius: 3px;
     font-size: 16px;
     margin-top: 10px;
-    font-weight: 600;
+    font-weight: 500;
+  }
+
+  .trip-content button:hover {
+    background-color: white;
+    color: #b12029;
   }
 }
 /* end dekstop styling */
