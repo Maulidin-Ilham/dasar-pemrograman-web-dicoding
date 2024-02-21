@@ -179,6 +179,13 @@ footer .social i:hover {
     padding-top: 4px;
   }
 
+  .card-content span p {
+    margin-top: 6px;
+    font-weight: 500;
+    color: #b12029;
+    cursor: pointer;
+  }
+
   .card img {
     width: 100%;
     height: auto;
@@ -399,12 +406,19 @@ footer .social i:hover {
   }
 
   .card-content h4 {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .card-content p {
     padding-top: 4px;
-    font-size: 24px;
+    font-size: 18px;
+  }
+
+  .card-content span p {
+    margin-top: 7px;
+    font-weight: 500;
+    color: #b12029;
+    cursor: pointer;
   }
 
   .card img {
@@ -638,7 +652,14 @@ footer .social i:hover {
 
   .card-content p {
     padding-top: 4px;
-    font-size: 24px;
+    font-size: 18px;
+  }
+
+  .card-content span p {
+    margin-top: 8px;
+    color: #b12029;
+    font-weight: 500;
+    cursor: pointer;
   }
 
   .card img {
