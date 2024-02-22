@@ -126,9 +126,12 @@ form {
   width: 300px;
   display: flex;
   flex-direction: column;
+  row-gap: 10px;
 }
 input {
   padding: 12px;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .card-container {
